@@ -1,27 +1,18 @@
 # GKH AI Resume Analyzer
 
-An AI-assisted resume analysis application built with Python. The repository includes resume parsing and scoring modules, supporting services, UI components, and related analytics projects.
+An intelligent, state-of-the-art SaaS application built with Python, Streamlit, and Google Gemini AI.
+This application allows recruiters and hiring managers to batch-process PDF resumes, extract key information, and compare them against a specific Job Description.
 
-## Main application
+## Features
+- **Batch Processing**: Upload up to 25 PDFs at once.
+- **Smart Scoring**: Automatically calculates a 0-100% Match Score based on Skills, Experience, and Education.
+- **Generative AI Feedback**: Uses Google's Gemini LLM to analyze gaps, extract strengths, and suggest improvements.
+- **Interactive UI**: Features a modern, frosted glassmorphism dashboard with responsive leaderboards.
+- **PDF Export**: Download clean, robust text-based PDF reports for any candidate.
 
-The main Streamlit entry point is `app.py`.
-
-## Setup
-
-1. Create and activate a Python virtual environment.
-2. Install the dependencies listed in `requirements.txt` (review and update this file if your local environment uses additional packages).
-3. Configure any required API keys as environment variables; never commit real secrets.
-4. Run the application with `streamlit run app.py` if the app uses Streamlit.
-
-## Included folders
-
-- `backend/` — resume parsing, job-description analysis, matching and scoring logic
-- `services/` — AI and report services
-- `frontend/` — UI components and styles
-- `database/` — database helpers and schema (runtime database files are excluded)
-- `Customer-Segmentation/` — customer segmentation example
-- `Sales-Analytics-Dashboard/` — sales analytics dashboard project
-
-## Security and repository hygiene
-
-Environment files containing secrets, Python cache files, and local database files are excluded from this commit. Review any sample data and logs before publishing further changes.
+## Installation
+1. Clone this repository.
+2. Install dependencies: `pip install -r requirements.txt` *(Note: you may need to freeze your pip list)*
+3. Create a `.env` file in the root directory and add your Gemini API Key:
+   `GEMINI_API_KEY="your_api_key_here"`
+4. Run the app: `streamlit run app.py`

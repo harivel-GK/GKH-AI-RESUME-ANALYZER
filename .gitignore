@@ -1,0 +1,23 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local databases and runtime artifacts
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
